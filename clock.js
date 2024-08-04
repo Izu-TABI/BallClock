@@ -20,9 +20,9 @@ function getNowDate() {
   MinutesTextChange;
 
 }
-setInterval('getNowDate();', 1000);
 
 function animate() {
+  getNowDate();
   today = new Date();
   todaySeconds = today.getSeconds();
   document.getElementById('secondsId').setAttribute('style', `margin-top: 10px;height: 10px; width: ${((todaySeconds + (today.getMilliseconds() * 0.001)) / 60) * 500}px; background-color: rgba(196, 196, 196, 0.708); zIndex: 10`);
