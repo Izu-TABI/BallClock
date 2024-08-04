@@ -1,0 +1,53 @@
+.html,
+body {
+  background-color: black;
+}
+
+#myCanvas {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clock-area {
+  width: 500px;
+  height: 240px;
+
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  background-color: rgba(131, 131, 131, 0.561);
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+
+
+.digital-clock {
+  user-select: none;
+  font-size: 80px;
+  font-weight: bold;
+  color: rgba(196, 196, 196, 0.708);
+  text-align: center;
+
+  #dateId {
+    p {
+      margin-top: 5px;
+    }
+
+    font-size: 20px;
+    color: rgba(196, 196, 196, 0.708);
+  }
+
+  p {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.centerDot {
+  margin: 0 10px;
+}
